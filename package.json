@@ -1,0 +1,16 @@
+{
+    "name": "testapp",
+    "version": "1.0.0",
+    "description": "testapp",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "start": "http-server -p 4445",
+        "build": "tsc -p ./src/tsconfig.json && rollup --config rollup.config.js"
+    },
+    "devDependencies": {
+        "rollup": "^2.58.0"
+    },
+    "dependencies": {
+    }
+}
