@@ -9,8 +9,10 @@
         "build": "tsc -p ./src/tsconfig.json && rollup --config rollup.config.js"
     },
     "devDependencies": {
+        "@rollup/plugin-node-resolve": "^13.0.5",
         "rollup": "^2.58.0"
     },
     "dependencies": {
+        "@glue42/desktop": "^5.7.1"
     }
 }

@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testApp</title>
+    <link rel="stylesheet" href="./styling/alert.css">
+    <link rel="stylesheet" href="./styling/style.css">
+    <title>Import at runtime</title>
 </head>
+
 <body>
-    <label for="firstNumber">First Number:</label>
-    <input type="number" id="firstNumber"><br><br>
-    <label for="secondNumber">Last Number:</label>
-    <input type="number" id="secondNumber"><br><br>
-    <p>Result:</p>
-    <p id="Result" style="display:none"></p>
-    <button id="additionButton">Add</button>
-    <button id="multiplyButton">Multiply</button>
+    <div class="modeClass">
+        <p>MODE:</p>
+        <input type="radio" id="Merge" name="mode" value="merge"><label for="Merge">Merge</label>
+        <input type="radio" id="Replace" name="mode" value="replace"><label for="Replace">Replace</label><br>
+    </div>
+    <div class="container">
+        <button class="btn" id="importApp1">Import App Grp1</button>
+        <button class="btn" id="removeAPP1">Remove App Grp1</button>
+        <br><button class="btn" id="importApp2">Import App Grp2</button>
+        <button class="btn" id="removeApp2">Remove App Grp2</button>
+        <br><button class="hover btn" id="clearMemmory">Clear memmory</button>
+        <div class="layouts">
+            <br><button class="btn " id="importWorkspace">Import Workspace</button>
+            <button class="btn" id="importSwimlane">Import Swimlane</button>
+            <br> <button class="btn " id="ImportGlobalLayouts">Import Global Layouts</button>
+            <button class="btn" id="removeLayouts">Remove Layouts</button>
+        </div>
+    </div>
 </body>
 <script src="./dist/bundle.js"></script>
 </html>
